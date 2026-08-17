@@ -195,4 +195,12 @@ export function canEnterClub(you, date) {
  * @example
  * shouldAnswerPhone(true, true, false); // true
  */
-export function shouldAnswerPhone(isMorning, isBoss, isAsleep) {}
+export function shouldAnswerPhone(isMorning, isBoss, isAsleep) {
+  if (isAsleep) {
+    return false;
+  } else if (isMorning && !isBoss) {
+    return false;
+  } else {
+    return true;
+  }
+}
