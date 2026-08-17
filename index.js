@@ -169,7 +169,13 @@ export function makeSLS(str1, str2) {
  * canEnterClub(5, 5); // 1
  */
 export function canEnterClub(you, date) {
-  /* TODO */
+  if (you <= 2 || date <= 2) {
+    return 0;
+  } else if (you >= 8 || date >= 8) {
+    return 2;
+  } else {
+    return 1;
+  }
 }
 
 /**
@@ -189,6 +195,4 @@ export function canEnterClub(you, date) {
  * @example
  * shouldAnswerPhone(true, true, false); // true
  */
-export function shouldAnswerPhone(isMorning, isBoss, isAsleep) {
-  /* TODO */
-}
+export function shouldAnswerPhone(isMorning, isBoss, isAsleep) {}
