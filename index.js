@@ -35,8 +35,6 @@ export function sumDouble(num1, num2) {
 export function makes10(num1, num2) {
   if (num1 === 10 || num2 === 10 || num1 + num2 === 10) {
     return true;
-  } else if (num1 + num2 === 10) {
-    return true;
   } else {
     return false;
   }
@@ -92,7 +90,7 @@ export function isMultiple35(n) {
  * shareLastDigit(10, 21); // false
  */
 export function shareLastDigit(num1, num2) {
-  return num1 % 10 === num2 % 20;
+  return num1 % 10 === num2 % 10;
 }
 
 /**
@@ -125,7 +123,7 @@ export function isColdAndHot(temp1, temp2) {
  * makeABBA("a", "b"); // "abba"
  */
 export function makeABBA(A, B) {
-  /* TODO */
+  return A + B + B + A;
 }
 
 /**
